@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="esquemas/01.ejercicio.dtd" type="application/xml-dtd"?>
+<geografia>
+  <continentes>
+    <continente nombre="Europa">
+      <nacion>España</nacion>
+      <nacion>Francia</nacion>
+      <nacion>Suiza</nacion>
+    </continente>
+    <continente nombre="América">
+      <nacion>Argentina</nacion>
+      <nacion>Jamaica</nacion>
+      <nacion>Uruguay</nacion>
+    </continente>
+  </continentes>
+  <paises>
+    <pais codigo="ESP" nombre="España" idioma="español">
+      <sistema>monarquía</sistema>
+      <superficie>504645</superficie>
+      <moneda>euro</moneda>
+      <moneda_nativa nombre="peseta" />
+    </pais>
+    <pais codigo="FRA" nombre="Francia" idioma="francés">
+      <sistema>república</sistema>
+      <superficie>675417</superficie>
+      <moneda>euro</moneda>
+      <moneda_nativa nombre="franco francés" />
+    </pais>
+  </paises>
+  <paises>
+    <pais codigo="SUI" nombre="Suiza" idioma="francés">
+      <sistema>república</sistema>
+      <superficie>41290</superficie>
+      <moneda>euro</moneda>
+      <moneda_nativa nombre="franco suizo" />
+    </pais>
+    <pais codigo="ING" nombre="Inglaterra">
+      <sistema>república</sistema>
+      <superficie>90585</superficie>
+      <moneda>libra</moneda>
+    </pais>
+  </paises>
+  <rios>
+    <rio tipo-agua="salada">
+      <nombre>Uruguay</nombre>
+      <nacion>Argentina</nacion>
+      <nacion>Uruguay</nacion>
+    </rio>
+    <rio>
+      <nombre>Ródano</nombre>
+      <nacion>Suiza</nacion>
+      <nacion>Francia</nacion>
+    </rio>
+    <rio>
+      <nombre>Bidasoa</nombre>
+      <nacion>España</nacion>
+      <nacion>Francia</nacion>
+    </rio>
+  </rios>
+</geografia>

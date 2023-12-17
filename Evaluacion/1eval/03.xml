@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="esquemas/05.ejercicio.dtd" type="application/xml-dtd"?>
+
+<cocina_restaurante>
+  <recetas>
+    <receta>
+      <datos>
+        <nombre>Sopa de cebollas</nombre>
+        <cantidad_comensales>4 personas</cantidad_comensales>
+      </datos>
+      <ingredientes total_ingredientes="9">
+        <ingrediente ingrediente_cantidad="1 Kg de cebollas." />
+        <ingrediente ingrediente_cantidad="2 libros de caldo de carne." />
+        <ingrediente ingrediente_cantidad="100 gr. mantequilla." />
+        <ingrediente ingrediente_cantidad="1 cucharada de harina." />
+        <ingrediente ingrediente_cantidad="100 gr de queso emmental suizo o gruyére rallado" />
+        <ingrediente ingrediente_cantidad="Pan tostado en rebanadas." />
+        <ingrediente ingrediente_cantidad="Tomillo." />
+        <ingrediente ingrediente_cantidad="1 hoja de laurel." />
+        <ingrediente ingrediente_cantidad="Pimienta" />
+      </ingredientes>
+      <proceso>
+        <pasos>
+          <paso numero="a">Pelar y partir las cebollas en rodajas finas</paso>
+          <paso numero="b">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que
+            esténtransparentes sin dorarse.</paso>
+          <paso numero="c">Añadir la harina sin dejar de remover</paso>
+          <paso numero="d">Ponerlo en una cazuela con el caldo, el tomillo y el laurel. </paso>
+          <paso numero="e">Dejar cocer a fuego lento durante unos 15 minutos</paso>
+          <paso numero="f">oner las rebanadas de pan encima, espolvorear el queso y gratinar al
+            horno</paso>
+        </pasos>
+      </proceso>
+    </receta>
+  </recetas>
+</cocina_restaurante>
