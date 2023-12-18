@@ -1,0 +1,14 @@
+<!ELEMENT cocina_restaurante (recetas)>
+<!ELEMENT recetas (receta)>
+<!ELEMENT receta (datos,ingredientes,proceso)>
+<!ELEMENT datos (nombre,cantidad_comensales)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cantidad_comensales (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente*)>
+<!ATTLIST ingredientes total_ingredientes CDATA #REQUIRED>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente ingrediente_cantidad CDATA #REQUIRED>
+<!ELEMENT proceso (pasos)>
+<!ELEMENT pasos (paso*)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso numero ID #REQUIRED>

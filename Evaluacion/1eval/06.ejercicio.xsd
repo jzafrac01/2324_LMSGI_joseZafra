@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="/Users/Usuario/Desktop/LMSGI.1Eval.examen/06.xml">
+  <xs:element name="order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xsd:string" />
+              <xs:element name="email" type="xsd:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="item">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xsd:string" />
+              <xs:element name="quantity" type="xsd:int" />
+              <xs:element name="priice" type="xsd:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+
+  </xs:element>
+</xs:schema>

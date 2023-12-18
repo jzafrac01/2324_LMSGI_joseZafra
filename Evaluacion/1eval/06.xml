@@ -1,0 +1,11 @@
+<order>
+  <customer>
+    <name>John Doe</name>
+    <email>john@example.com</email>
+  </customer>
+  <item>
+    <name>Laptop</name>
+    <quantity>2</quantity>
+    <price>899.99</price>
+  </item>
+</order>
