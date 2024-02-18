@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pagina_web xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="./esquemas/01.ejercici.xsd">
+  <coche id="01" marca="Volskwagen">
+
+
+    <certificado>No</certificado>
+    <descripcion>VOLKSWAGEN Tiguan Advance 2.0 TDI 110kW150CV BMT DSG 5p.</descripcion>
+
+
+    <precio>
+      <financiado>18900</financiado>
+    </precio>
+
+
+    <garantia años="1" />
+    <ciudad>Barcelona</ciudad>
+    <combustible tipo="Diésel" />
+    <año>2017</año>
+    <kilometros>96190</kilometros>
+    <fecha_hora_publicacion>23/10/2023 06:19</fecha_hora_publicacion>
+    <foto>www.foto_coxe_volkwagen.png</foto>
+
+
+    <posibles_compradores>
+      <posible_comprador dni="12345678a">
+        <nombre>Albert</nombre>
+        <apellidos>Torres Castellon</apellidos>
+        <telefono>608453249</telefono>
+        <email>AlbertTorres@gmail.com</email>
+      </posible_comprador>
+      <posible_comprador dni="87654321b">
+        <nombre>Roberto</nombre>
+        <apellidos>Garcia Leon</apellidos>
+        <telefono>609938610</telefono>
+        <email>RobertoGarcia@gmail.com</email>
+      </posible_comprador>
+    </posibles_compradores>
+  </coche>
+
+
+  <coche id="02" marca="BMW">
+    <certificado>Sí</certificado>
+    <descripcion>BMW Serie 1 116d 5p.</descripcion>
+    <precio>
+      <al_contado>24990</al_contado>
+    </precio>
+    <garantia años="2" />
+    <ciudad>Barcelona</ciudad>
+    <combustible tipo="Diésel" />
+    <año>2019</año>
+    <kilometros>1000</kilometros>
+    <fecha_hora_publicacion>18/10 09:44</fecha_hora_publicacion>
+    <foto>www.foto_coxe_bmw.png</foto>
+    <posibles_compradores>
+      <posible_comprador dni="87654321b">
+        <nombre>Roberto</nombre>
+        <apellidos>Garcia Leon</apellidos>
+        <telefono>609938610</telefono>
+        <email>RobertoGarcia@gmail.com</email>
+      </posible_comprador>
+    </posibles_compradores>
+  </coche>
+
+  <coche id="03" marca="Volskwagen">
+    <certificado>No</certificado>
+    <descripcion>VOLKSWAGEN Touareg 3.0 TDI 204CV Tiptronic BMT 5p.</descripcion>
+    <precio>
+      <al_contado>22990</al_contado>
+    </precio>
+    <garantia años="1" />
+    <ciudad>Barcelona</ciudad>
+    <combustible tipo="Gasolina" />
+    <año>2014</año>
+    <kilometros>120000</kilometros>
+    <fecha_hora_publicacion>29/09 03:41</fecha_hora_publicacion>
+    <foto>www.foto_coxe_volkwagen.png</foto>
+    <posibles_compradores>
+      <posible_comprador dni="98371353f">
+        <nombre>Pablo</nombre>
+        <apellidos>Ruben Ortiz</apellidos>
+        <telefono>602847162</telefono>
+        <email>PabloOrtiz@gmail.com</email>
+      </posible_comprador>
+    </posibles_compradores>
+  </coche>
+
+  <coche id="04" marca="Chrysler">
+    <certificado>Si</certificado>
+    <descripcion> CHRYSLER Sebring 2.0 LE Auto 4p.</descripcion>
+    <precio>
+      <al_contado>2890</al_contado>
+    </precio>
+    <garantia años="2" />
+    <combustible tipo="Gasolina" />
+    <año>2001</año>
+    <kilometros>134000</kilometros>
+    <fecha_hora_publicacion>21/10 11:22</fecha_hora_publicacion>
+  </coche>
+
+  <coche id="05" marca="Mercedes">
+    <certificado>No</certificado>
+    <descripcion>MERCEDES-BENZ Clase A A 200 d Urban 5p.</descripcion>
+    <precio>
+      <financiado>22900</financiado>
+    </precio>
+    <garantia años="5" />
+    <combustible tipo="Gasolina" />
+    <año>2016</año>
+    <kilometros>47740</kilometros>
+    <fecha_hora_publicacion>22/10 11:17</fecha_hora_publicacion>
+    <foto>www.foto_coxe_mercedes1.png</foto>
+    <foto>www.foto_coxe_mercedes2.png</foto>
+    <foto>www.foto_coxe_mercedes3.png</foto>
+    <posibles_compradores>
+      <posible_comprador dni="12345678a">
+        <nombre>Albert</nombre>
+        <apellidos>Torres Castellon</apellidos>
+        <telefono>608453249</telefono>
+        <email>AlbertTorres@gmail.com</email>
+      </posible_comprador>
+      <posible_comprador dni="87654321b">
+        <nombre>Roberto</nombre>
+        <apellidos>Garcia Leon</apellidos>
+        <telefono>609938610</telefono>
+        <email>RobertoGarcia@gmail.com</email>
+      </posible_comprador>
+    </posibles_compradores>
+  </coche>
+</pagina_web>

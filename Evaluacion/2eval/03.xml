@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Examen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="esquemas/03C.xsd">
+
+  <examen>
+    <Id_aspirante>3424</Id_aspirante>
+  </examen>
+
+  <aspirante>
+    <Id_aspirante>392</Id_aspirante>
+    <Nombres>Anthony</Nombres>
+    <Apellidos>Chavez Gonzalez</Apellidos>
+    <DNI>4937253A</DNI>
+    <Telefono>672348947</Telefono>
+    <Direccion>Plaza los sapos nº7</Direccion>
+    <Fecha_nacimiento>25/04/1999</Fecha_nacimiento>
+    <Dan>3</Dan>
+    <Cinturon>blanco</Cinturon>
+    <Fecha_Ingreso_Dan>25/04/2018</Fecha_Ingreso_Dan>
+    <FotoAspirante></FotoAspirante>
+    <Tiempo_Dan_Anterior></Tiempo_Dan_Anterior>
+    <FotoDNI></FotoDNI>
+    <FotoCarnetGrados></FotoCarnetGrados>
+  </aspirante>
+
+  <meritos>
+    <Id_aspirante>393</Id_aspirante>
+    <Edad_aspirante>19</Edad_aspirante>
+    <LicenciaActualizada>false</LicenciaActualizada>
+    <TrabajoEscrito>true</TrabajoEscrito>
+  </meritos>
+
+  <Convalidacion_Grados>
+    <Id_aspirante>394</Id_aspirante>
+  </Convalidacion_Grados>
+
+  <Requisitos_Aspirantes>
+    <SolicitudHasta3Dan>true</SolicitudHasta3Dan>
+    <D4anySuperiorCurriculum>false</D4anySuperiorCurriculum>
+  </Requisitos_Aspirantes>
+
+  <DispensaMedica>
+    <Id_aspirante>123</Id_aspirante>
+  </DispensaMedica>
+
+  <Jueces>
+    <Id_aspirante>44</Id_aspirante>
+    <Nombres>Juan jose</Nombres>
+    <Apellidos>Torres</Apellidos>
+    <DiplomaJuez>true</DiplomaJuez>
+  </Jueces>
+
+  <Criterio_Valoracion>
+    <Indumentaria>12</Indumentaria>
+    <AseoPersonal>5</AseoPersonal>
+    <EjecucionTecnica>7</EjecucionTecnica>
+    <Valores>3</Valores>
+    <Respuestas>7</Respuestas>
+  </Criterio_Valoracion>
+
+</Examen>

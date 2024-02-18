@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="Examen">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="examen" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Id_aspirante" type="xsd:integer" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="aspirante" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Id_aspirante" type="xsd:integer" />
+              <xsd:element name="Nombres" type="xsd:string" />
+              <xsd:element name="Apellidos" type="xsd:string" />
+              <xsd:element name="DNI" type="xsd:string" />
+              <xsd:element name="Telefono" type="xsd:string" />
+              <xsd:element name="Direccion" type="xsd:string" />
+              <xsd:element name="Fecha_nacimiento" type="xsd:string" />
+              <xsd:element name="Dan" type="xsd:string" />
+              <xsd:element name="Cinturon" type="xsd:string" />
+              <xsd:element name="Fecha_Ingreso_Dan" type="xsd:string" />
+              <xsd:element name="FotoAspirante" type="xsd:string" />
+              <xsd:element name="Tiempo_Dan_Anterior" type="xsd:string" />
+              <xsd:element name="FotoDNI" type="xsd:string" />
+              <xsd:element name="FotoCarnetGrados" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="meritos" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Id_aspirante" type="xsd:integer" />
+              <xsd:element name="Edad_aspirante" type="xsd:integer" />
+              <xsd:element name="LicenciaActualizada" type="xsd:boolean" />
+              <xsd:element name="TrabajoEscrito" type="xsd:boolean" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Convalidacion_Grados" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Id_aspirante" type="xsd:integer" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Requisitos_Aspirantes" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SolicitudHasta3Dan" type="xsd:boolean" />
+              <xsd:element name="D4anySuperiorCurriculum" type="xsd:boolean" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="DispensaMedica" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Id_aspirante" type="xsd:integer" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Jueces" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Id_aspirante" type="xsd:integer" />
+              <xsd:element name="Nombres" type="xsd:string" />
+              <xsd:element name="Apellidos" type="xsd:string" />
+              <xsd:element name="DiplomaJuez" type="xsd:boolean" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Criterio_Valoracion" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Indumentaria" type="xsd:integer" />
+              <xsd:element name="AseoPersonal" type="xsd:integer" />
+              <xsd:element name="EjecucionTecnica" type="xsd:integer" />
+              <xsd:element name="Valores" type="xsd:integer" />
+              <xsd:element name="Respuestas" type="xsd:integer" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

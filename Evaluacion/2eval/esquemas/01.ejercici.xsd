@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pagina_web">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="coche" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+
+
+              <xs:element name="certificado" type="xs:string" />
+              <xs:element name="descripcion" type="xs:string" />
+              <xs:element name="precio">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="financiado" minOccurs="0" type="xs:int" />
+                    <xs:element name="al_contado" minOccurs="0" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="garantia">
+                <xs:complexType>
+                  <xs:attribute name="años" type="xs:int" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ciudad" minOccurs="0" type="xs:string" fixed="Barcelona" />
+              <xs:element name="combustible">
+                <xs:complexType>
+                  <xs:attribute name="tipo" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="año" type="xs:int" />
+              <xs:element name="kilometros" type="xs:int" />
+              <xs:element name="fecha_hora_publicacion" type="xs:string" />
+              <xs:element name="foto" minOccurs="0" type="xs:string" maxOccurs="10" />
+              <xs:element name="posibles_compradores" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="posible_comprador" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre" type="xs:string" />
+                          <xs:element name="apellidos" type="xs:string" />
+                          <xs:element name="telefono" type="xs:int" />
+                          <xs:element name="email" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="dni" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:int" use="required" />
+            <xs:attribute name="marca" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
