@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ej26</title>
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Ejercicio 30.Mejora de <textarea></h1>
-
-    <form>
-      <label for="descripcion">Descripción:</label><br />
-      <div id="editor"></div>
-      <!-- Div donde se renderizará el editor Quill -->
-      <input type="hidden" name="descripcion" id="descripcion" />
-      <br /><br />
-      <input type="submit" value="Enviar" />
+    <h1>Ejercicio 30.Mejora de textarea</h1>
+    <form action="#">
+      <div>
+        <label for="mensaje"></label>
+        <div id="editor"></div>
+        <textarea id="mensaje" name="mensaje" style="display: none"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
     </form>
 
-    <!-- Script para inicializar Quill en el div #editor -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
     <script>
       var quill = new Quill("#editor", {
         theme: "snow",
-        placeholder: "Escribe aquí...",
+        placeholder: "Escribe tu mensaje aquí...",
       });
 
-      // Escuchar el evento de envío del formulario para copiar el contenido de Quill al campo oculto
-      document.querySelector("form").onsubmit = function () {
-        var descripcionInput = document.querySelector("#descripcion");
-        descripcionInput.value = quill.root.innerHTML;
-      };
+      quill.on("text-change", function () {
+        var contenidoHTML = quill.root.innerHTML;
+        document.getElementById("mensaje").value = contenidoHTML;
+      });
     </script>
   </body>
 </html>
