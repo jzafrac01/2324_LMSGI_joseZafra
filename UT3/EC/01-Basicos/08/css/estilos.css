@@ -1,0 +1,26 @@
+/* Color de fondo gris claro para #noticias y #pie */
+#noticias,
+#pie {
+  background-color: #F8F8F8;
+}
+
+/* Color de fondo amarillo claro para #publicidad */
+#publicidad {
+  background-color: #FFF6CD;
+}
+
+/* Color de fondo y padding para los h2 del lateral #secundario */
+#secundario h2 {
+  background-color: #DB905C;
+  padding: 0.2em;
+}
+
+/* Fondo del elemento #menu mediante una imagen */
+#menu {
+  background-image: url('fondo_menu.gif');
+}
+
+/* Logotipo del sitio como imagen de fondo para el elemento h1 en #cabecera */
+#cabecera h1 {
+  background-image: url('logo.gif');
+}

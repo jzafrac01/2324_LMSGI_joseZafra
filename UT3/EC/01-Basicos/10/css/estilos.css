@@ -1,0 +1,77 @@
+/* Fuente base */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: black;
+}
+
+/* Estilos para los h2 de .articulo */
+.articulo h2 {
+  color: #CC6600;
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+}
+
+/* Estilos para los elementos del #menu */
+#menu {
+  margin-right: 1em;
+}
+
+#menu a {
+  color: white;
+  font-size: 1.3em;
+}
+
+/* Tamaño del texto de #lateral */
+#lateral {
+  font-size: 0.9em;
+}
+
+/* Estilos para la fecha de cada noticia */
+.noticias .fecha {
+  display: block;
+  color: #999;
+}
+
+/* Estilos para el h3 de #noticias */
+#noticias h3 {
+  color: #003366;
+}
+
+/* Estilos para el texto de #publicidad */
+#publicidad {
+  color: #555;
+}
+
+/* Estilos para los enlaces dentro de #publicidad */
+#publicidad a {
+  color: #CC6600;
+}
+
+/* Estilos para los enlaces dentro de .articulo */
+.articulo a {
+  color: #CC6600;
+}
+
+/* Margen superior e inferior para los párrafos */
+p {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* Estilos para #secundario */
+#secundario {
+  background-color: #F8F8F8;
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para #pie */
+#pie {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+}

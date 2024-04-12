@@ -1,0 +1,30 @@
+/* Eliminar el borde gris por defecto */
+* {
+  border: none;
+}
+
+/* Borde inferior azul para el elemento #menu */
+#menu {
+  border-bottom: 1px solid #004C99;
+}
+
+/* Borde gris claro para el elemento #noticias */
+#noticias {
+  border: 1px solid #C5C5C5;
+}
+
+/* Borde discontinuo de color #CC6600 para el elemento #publicidad */
+#publicidad {
+  border: 1px dashed #CC6600;
+}
+
+/* Borde de color #CC6600 para el lateral formado por el elemento #secundario */
+#secundario {
+  border: 1px solid #CC6600;
+}
+
+/* Bordes superior e inferior de color gris claro #C5C5C5 para el elemento #pie */
+#pie {
+  border-top: 1px solid #C5C5C5;
+  border-bottom: 1px solid #C5C5C5;
+}
