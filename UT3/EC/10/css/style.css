@@ -1,0 +1,16 @@
+#calc{
+margin: 0 auto;
+border: 1px solid black;
+}
+.botones{
+  height: 100px;
+  width: 280px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.boton{
+  width: 50px;
+  height: 28px;
+  text-align: center;
+  border: 1px solid aqua;
+}
