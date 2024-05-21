@@ -9,7 +9,8 @@
   --cl-DarkGrayishBlue: hsl(228, 12%, 48%);
   --cl-White: hsl(0, 0%, 100%);
 
-  --font-family: Montserrat, system-ui, sans-serif
+  --font-family: Montserrat, system-ui, sans-serif;
+  --font-family: Fraunces, system-ui, sans-serif;
 }
 
 html {
@@ -30,7 +31,6 @@ body {
   flex-direction: row;
   width: 500px;
   border: 1px wolid var(--cl-VeryDarkBlue);
-
   .card-img {
     flex-basis: 50%;
 
@@ -47,7 +47,10 @@ body {
     align-items: flex-start;
     padding-left: 1rem;
     background-color: var(--cl-White);
-
+    
+    .product-description{
+    font-family: Montserrat;
+}
     .container-price {
       display: flex;
 
