@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codigo qr</title>
+  <style>
+    :root {
+      --cl-white: hsl(0, 0%, 100%);
+      --cl-lightgray: hsl(212, 45%, 89%);
+      --cl-grayish-blue: hsl(220, 15%, 55%);
+      --cl-dark-blue: hsl(218, 44%, 22%);
+    }
+
+    html {
+      font-size: 100%;
+    }
+
+    body {
+      width: 100vw375px;
+      background-color: var(--cl-lightgray);
+    }
+
+    .card {
+      width: 300px;
+      margin: 0 auto;
+      background-color: var(--cl-white);
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+
+    .card-image img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 0.1rem;
+      font-family: outfit;
+      font-weight: 700;
+    }
+
+    .card-description {
+      font-size: 0.9em;
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--cl-grayish-blue);
+      font-family: outfit;
+    }
+  </style>
+</head>
+<!--Fuente-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+<body>
+  <div class="card">
+    <div class="card-image">
+      <img src="images/image-qr-code.png" alt="Código QR " />
+    </div>
+    <h4>Improve your front-end skills by building projects</h4>
+    <p>
+      Scan the QR code to visit front-end Mentor and take your coding skills
+      to the next level
+    </p>
+  </div>
+</body>
+
+</html>

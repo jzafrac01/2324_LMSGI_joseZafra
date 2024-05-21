@@ -1,0 +1,46 @@
+@import url("https://fonts.google.com/specimen/Figtree");
+
+:root {
+  --Yellow: hsl(47, 88%, 63%) --White: hsl(0, 0%, 100%) --Grey: hsl(0, 0%, 50%) --Black: hsl(0, 0%, 7%)
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+}
+
+.card {
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  border-radius: 1.33rem;
+  /* 20px */
+  text-align: center;
+  background-color: var(--white);
+}
