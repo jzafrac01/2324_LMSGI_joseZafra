@@ -2,23 +2,95 @@
 
 ---
 
-<footer class="header">
-  <div class="nav">
-    <ul>
-      <li><a href="" title="1">1</a></li>
-      <li><a href="" title="2">2</a></li>
-      <li><a href="" title="3">3</a></li>
-      <li><a href="" title="4">4</a></li>
-      <li><a href="" title="5">5</a></li>
-    </ul>
+<footer class="footer">
+  <div class="container">
+    <div class="content">
+      <a href="" class="logo">
+        <img src="/Pragmat_Archivo.svg" class="logo-img" />
+      </a>
+      <ul class="menu">
+        <li><a href="#" class="menu-item">About</a></li>
+        <li><a href="#" class="menu-item">Privacy Policy</a></li>
+        <li><a href="#" class="menu-item">Licensing</a></li>
+        <li><a href="#" class="menu-item">Contact</a></li>
+      </ul>
+    </div>
+    <hr class="div" />
+    <span class="copyright"
+      >© 2024 <a href="https://www.suarezdefigueroa.es" class="copyright-link"
+        >Pragmat Tattoo™</a
+      >. All Rights Reserved.</span
+    >
   </div>
 </footer>
 
 <style>
-  .header {
+  .footer {
+    background-color: black;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
     display: flex;
     align-items: center;
-    align-content: center;
-    justify-content: space-between;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+
+  .logo .logo-img {
+    height: 3.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-item {
+    margin-right: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu-item:hover {
+    text-decoration: underline;
+  }
+
+  .div {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid white;
+  }
+
+  .copyright {
+    display: block;
+    font-size: 0.875rem;
+    color: white;
+    text-align: center;
+  }
+
+  .copyright-link:hover {
+    text-decoration: underline;
   }
 </style>

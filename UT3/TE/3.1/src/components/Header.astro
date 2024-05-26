@@ -13,15 +13,15 @@ const items = [
     path: "/about2",
   },
   {
-    title: "About3",
-    path: "/about",
+    title: "Contacto",
+    path: "/contacto",
   },
 ];
 ---
 
 <header id="main-header">
   <nav class="navbar">
-    <img id="navbar-logo" src="/favicon.svg" alt="logo" />
+    <img id="navbar-logo" src="/Pragmat_Archivo.svg" alt="logo" />
     <ul class="menu">
       {
         items.map((item, index) => (
@@ -38,7 +38,23 @@ const items = [
       }
     </ul>
     <div class="menu-toggle">
-      <img id="hamburguer-logo" src="/icon-menu.svg" alt="" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-menu-2"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#ffffff"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
     </div>
   </nav>
 </header>
@@ -51,11 +67,6 @@ const items = [
   #navbar-logo {
     height: 40px;
     width: 40px;
-    background-color: black;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
   }
 
   .header {
@@ -68,14 +79,17 @@ const items = [
     align-items: center;
     gap: 32px;
   }
-
+  #navbar-logo {
+    height: 4rem;
+    width: 11rem;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 2rem;
     padding-left: 1rem;
-
+    background-color: black;
     .menu {
       display: flex;
       justify-content: space-between;
