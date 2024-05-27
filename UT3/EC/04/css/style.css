@@ -19,6 +19,7 @@
 
 html {
   font-size: 100%;
+  background-color: var(--cl-OffBlack);
 }
 
 p {
@@ -34,11 +35,11 @@ a {
   color: white;
 }
 
-.body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cl-DarkGrey);
+  background-color: var(--cl-OffBlack);
   width: 100%;
   height: 100vh;
   font-family: var(--cl-font-family);
@@ -52,7 +53,7 @@ a {
   width: 300px;
   border: 1px solid var(--cl-DarkGrey);
   padding: 1.4rem;
-  background-color: var(--cl-Grey);
+  background-color: var(--cl-DarkGrey);
   border-radius: 1rem;
 }
 
@@ -71,17 +72,17 @@ a {
   font-weight: 600;
 }
 
-.card-address {
+.card .card-adress {
   font-size: .8em;
-  font-weight: 700;
-  color: var(--cl-Grey);
+  font-weight: 600;
+  color: var(--cl-Green);
 }
 
 .card-phrase {
-  font-size: 7em;
-  font-weight: 400;
-  color: var(--cl-White);
-  margin-top: 2rem;
+  font-size: .7em;
+  font-weight: 900;
+  color: grey;
+  margin-top: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -93,14 +94,17 @@ a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  text-align: center;
   gap: 1rem;
 }
 
-.card .social-buttons {
-  text-align: center;
-  background-color: var(--cl-Green);
-  font-size: 7em;
-  font-weight: 700;
+.social-buttom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cl-Grey);
+  font-size: 1.0em;
+  font-weight: 450;
   border-radius: .3rem;
   padding: 1rem 0;
 }
