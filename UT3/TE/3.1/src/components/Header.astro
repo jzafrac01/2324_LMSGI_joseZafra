@@ -21,7 +21,7 @@ const items = [
 
 <header id="main-header">
   <nav class="navbar">
-    <img id="navbar-logo" src="/Pragmat_Archivo.svg" alt="logo" />
+    <img id="navbar-logo" src="/svg/Pragmat_Archivo.svg" alt="logo" />
     <ul class="menu">
       {
         items.map((item, index) => (
@@ -57,12 +57,17 @@ const items = [
       </svg>
     </div>
   </nav>
+  <hr />
 </header>
 
 <style>
   #main-header {
     max-width: 960px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  #main-header hr {
+    margin: 0 auto;
   }
   #navbar-logo {
     height: 40px;
@@ -112,20 +117,19 @@ const items = [
       .menu {
         display: none;
         position: absolute;
-        top: 13%;
+        top: 10%;
         right: 0;
         width: 100%;
         height: 100vh;
         gap: 0.5rem;
 
         &.active {
-          /* .menu tiene además aplicado .active */
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
           border-radius: 0.1rem;
-          background-color: white;
+          background-color: black;
           color: blue;
           font-size: 1.1em;
           font-weight: 500;
@@ -135,7 +139,7 @@ const items = [
           & li {
             padding: 0.5rem 1rem;
             width: 100%;
-            background-color: white;
+            background-color: black;
           }
         }
       }
