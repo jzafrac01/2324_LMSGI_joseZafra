@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página no encontrada</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+      :root {
+        --font-family: "Playfair Display", sans-serif;
+      }
       body {
         margin: 0;
         padding: 0;
@@ -17,10 +21,9 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-image: url("/jpg/brillo-efecto-fondo-particulas-tarjeta-felicitacion-lujo-rico_97886-107.jpg");
+        background-image: url("/jpg/wall2.jpg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
         color: white;
       }
       h1 {
@@ -37,9 +40,9 @@
       .icon-svg {
         width: 250px;
         height: 200px;
-        color: black;
       }
       .message {
+        font-family: var(--font-family);
       }
       .button {
         display: inline-block;
@@ -53,13 +56,14 @@
         text-decoration: none;
         cursor: pointer;
         animation: blink 3s infinite;
+        font-family: var(--font-family);
       }
       @keyframes blink {
         0% {
           background-color: transparent;
         }
         50% {
-          background-color: white;
+          background-color: rgb(255, 255, 255);
         }
         100% {
           background-color: transparent;
@@ -77,7 +81,7 @@
         Lo sentimos, no pudimos encontrar la página que estás buscando.
       </p>
       <p class="message-button">
-        <a class="button" href="/">Volver al inicio</a>
+        <a class="button" href="/">Volver a inicio</a>
       </p>
     </div>
   </body>
