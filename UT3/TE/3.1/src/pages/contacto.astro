@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
+//Script formulario para serv
 const handleSubmit = (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
@@ -8,7 +8,7 @@ const handleSubmit = (event) => {
   const email = formData.get("email");
   const message = formData.get("message");
 
-  // Añadir aquí los datos del servidor
+  // Añadir aquí los datos del serv
   console.log("Nombre:", name);
   console.log("Correo electrónico:", email);
   console.log("Mensaje:", message);
@@ -18,10 +18,11 @@ const handleSubmit = (event) => {
 ---
 
 <script>
+  //Script para el boton del form
   const blinkButton = () => {
     const button = document.querySelector('button[type="submit"]');
     if (button) {
-      button.style.transition = "opacity 1s";
+      button.style.transition = "opacity 3s";
       let opacity = 1;
       setInterval(() => {
         opacity = opacity === 1 ? 0.5 : 1;
