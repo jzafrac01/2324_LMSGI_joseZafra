@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <main class="main">
+    <div class="promo">
+      <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+      <div class="promo-content">
+        <h1>Promociones !!!</h1>
+        <p>3x2 EN TATTOOS CHICOS</p>
+        <p>+</p>
+        <p>50 % EN TU SEGUNDO TATTOO (EN LA MISMA SESIÓN)</p>
+      </div>
+    </div>
+    <p class="message-button">
+      <a class="button" href="/">Volver a inicio</a>
+    </p>
+  </main>
+
+  <style>
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-image: url("/jpg/textura-wall.jpg"); /* Ruta a tu imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 20px;
+    }
+    .promo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .promo-image {
+      width: 100%;
+      max-width: 300px; /* Ajusta el tamaño según sea necesario */
+      max-height: 400px;
+      margin-bottom: 20px;
+    }
+    .promo-content {
+      max-width: 600px;
+    }
+    .message-button {
+      margin-top: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .button:active {
+      animation: bounce 0.3s;
+    }
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .promo {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .promo-image {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+      .promo-content {
+        text-align: left;
+      }
+      .message-button {
+        margin-top: 0;
+        align-self: flex-end;
+      }
+    }
+  </style>
+</Layout>

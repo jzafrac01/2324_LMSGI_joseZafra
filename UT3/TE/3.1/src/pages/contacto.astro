@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
 //Script formulario para serv
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -40,7 +41,7 @@ const handleSubmit = (event) => {
       <div class="contact-main">
         <video autoplay muted loop id="background-video">
           <source src="/jpg/VIDEO-2024-05-28-01-47-06.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
+          Tu navegador Web no soporta html5.
         </video>
         <h1>Contáctenos</h1>
         <p class="message-contact">
@@ -119,6 +120,10 @@ const handleSubmit = (event) => {
     </div>
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+      :root {
+        --cl-font-family: "EB Garamond", serif;
+      }
       .main {
         display: flex;
         flex-direction: column;
@@ -143,7 +148,7 @@ const handleSubmit = (event) => {
           position: relative;
           z-index: 1;
           color: rgba(255, 255, 255, 0.7);
-          font-family: "EB Garamond", serif;
+          font-family: var(--cl-font-family);
         }
 
         #background-video {

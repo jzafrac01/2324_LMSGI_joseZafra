@@ -1,19 +1,19 @@
 ---
 const items = [
   {
-    title: "Menu 1",
+    title: "INICIO",
     path: "/",
   },
   {
-    title: "About",
-    path: "/about",
+    title: "GALERÍA",
+    path: "/gallery",
   },
   {
-    title: "About2",
-    path: "/about2",
+    title: "PROMOCIONES",
+    path: "/promo",
   },
   {
-    title: "Contacto",
+    title: "CONTACTO",
     path: "/contacto",
   },
 ];
@@ -25,15 +25,11 @@ const items = [
     <ul class="menu">
       {
         items.map((item, index) => (
-          <>
-            {
-              <li>
-                <a class="menu-item" href={item.path}>
-                  <span>{item.title}</span>
-                </a>
-              </li>
-            }
-          </>
+          <li key={index}>
+            <a class="menu-item" href={item.path}>
+              <span>{item.title}</span>
+            </a>
+          </li>
         ))
       }
     </ul>
@@ -61,6 +57,10 @@ const items = [
 </header>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+  :root {
+    --cl-font-family: "EB Garamond", serif;
+  }
   #main-header {
     max-width: 960px;
     margin: 0 auto;
@@ -94,53 +94,54 @@ const items = [
     padding-right: 2rem;
     padding-left: 1rem;
     background-color: black;
-    .menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 32px;
-      color: blue;
-    }
-
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--cl-font-family);
+  }
+  .menu-item {
+    color: white;
+    text-decoration: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
     .menu-toggle {
-      display: none;
+      display: block;
+      height: 50px;
+      width: 50px;
     }
+    .menu {
+      display: none;
+      position: absolute;
+      top: 7%;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      gap: 0.5rem;
+      &.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 0.1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        z-index: 10;
+        font-family: var(--cl-font-family);
 
-    @media screen and (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-        height: 50px;
-        width: 50px;
-      }
-
-      .menu {
-        display: none;
-        position: absolute;
-        top: 7%;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        gap: 0.5rem;
-
-        &.active {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          border-radius: 0.1rem;
+        & li {
+          padding: 0.5rem 1rem;
+          width: 100%;
           background-color: black;
-          color: blue;
-          font-size: 1.1em;
-          font-weight: 500;
-          padding-top: 2rem;
-          padding-left: 1rem;
-          z-index: 10;
-
-          & li {
-            padding: 0.5rem 1rem;
-            width: 100%;
-            background-color: black;
-          }
         }
       }
     }
@@ -148,18 +149,13 @@ const items = [
 </style>
 
 <script>
-  const menuToggle = document.querySelector(".menu-toggle");
-  const menu = document.querySelector(".menu");
-  const hamburguer_logo = document.querySelector("#hamburguer-logo");
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
 
-  menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    menu.classList.toggle("active");
-
-    if (menu.classList.contains("active")) {
-      hamburguer_logo.src = "/icon-menu.svg";
-    } else {
-      hamburguer_logo.src = "/icon-menu.svg";
-    }
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("active");
+      menu.classList.toggle("active");
+    });
   });
 </script>
