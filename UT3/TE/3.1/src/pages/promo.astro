@@ -5,103 +5,167 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="About">
   <main class="main">
     <div class="promo">
-      <img class="promo-image" src="/jpg/IMG_8267.jpg" />
       <div class="promo-content">
-        <h1>Promociones !!!</h1>
+        <h1>Promociones !</h1>
         <p>3x2 EN TATTOOS CHICOS</p>
         <p>+</p>
         <p>50 % EN TU SEGUNDO TATTOO (EN LA MISMA SESIÓN)</p>
       </div>
     </div>
-    <p class="message-button">
-      <a class="button" href="/">Volver a inicio</a>
-    </p>
-  </main>
+    <div class="cards">
+      <div class="card-1">
+        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <div class="card-text">
+          <h4>Realismo</h4>
+          <p>
+            El arte de plasmar, de manera perfecta y lo más fielmente posible,
+            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
+            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="card-1">
+        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <div class="card-text">
+          <h4>Realismo</h4>
+          <p>
+            El arte de plasmar, de manera perfecta y lo más fielmente posible,
+            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
+            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="card-1">
+        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <div class="card-text">
+          <h4>Realismo</h4>
+          <p>
+            El arte de plasmar, de manera perfecta y lo más fielmente posible,
+            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
+            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="card-1">
+        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <div class="card-text">
+          <h4>Realismo</h4>
+          <p>
+            El arte de plasmar, de manera perfecta y lo más fielmente posible,
+            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
+            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="cuidados-box">
+        <h3>Cuidados de un tatuaje</h3>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ul>
+      </div>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Seymour+One&display=swap");
-    :root {
-      --cl-font-family: "EB Garamond", serif;
-      --cl-font2-family: "Seymour One", serif;
-    }
-    .main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      background-image: url("/jpg/textura-wall.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: white;
-      padding: 20px;
-    }
-    .promo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .promo-image {
-      width: 100%;
-      max-width: 300px;
-      max-height: 400px;
-      margin-bottom: 20px;
-      border-radius: 10%;
-    }
-    .promo-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 600px;
-      font-family: var(--cl-font-family);
-      font-size: large;
-    }
-    .message-button {
-      margin-top: 20px;
-    }
-    .button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-    .button:hover {
-      background-color: #0056b3;
-    }
-    .button:active {
-      animation: bounce 0.3s;
-    }
-    @keyframes bounce {
-      0%,
-      100% {
-        transform: translateY(0);
+      :root {
+        --cl-font-family: "EB Garamond", serif;
       }
-      50% {
-        transform: translateY(-10px);
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 30px;
+        background-color: rgba(14, 14, 14, 0.95);
+        h1 {
+          font-size: 50px;
+        }
       }
-    }
-    @media screen and (min-width: 768px) {
       .promo {
-        flex-direction: row;
-        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
       }
-      .promo-image {
-        margin-right: 20px;
-        margin-bottom: 0;
+      .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+        }
+        .card-1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          background-color: white;
+          max-height: 300px;
+          max-width: 350px;
+          color: black;
+          font-size: medium;
+          font-family: var(--cl-font-family);
+          h4 {
+            font-size: 20px;
+            margin: 0 auto;
+          }
+          & img {
+            max-width: 150px;
+          }
+          .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+          }
+          .button:hover {
+            background-color: grey;
+          }
+        }
       }
       .promo-content {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        font-family: var(--cl-font-family);
+        font-size: large;
       }
       .message-button {
-        margin-top: 0;
-        align-self: flex-end;
+        margin-top: 20px;
       }
-    }
-  </style>
+
+      .button:hover {
+        background-color: #0056b3;
+      }
+      .button:active {
+        animation: bounce 0.3s;
+      }
+    </style>
+  </main>
 </Layout>
