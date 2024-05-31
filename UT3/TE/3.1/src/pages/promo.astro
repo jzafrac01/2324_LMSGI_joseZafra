@@ -19,12 +19,18 @@ import Layout from "../layouts/Layout.astro";
   </main>
 
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Seymour+One&display=swap");
+    :root {
+      --cl-font-family: "EB Garamond", serif;
+      --cl-font2-family: "Seymour One", serif;
+    }
     .main {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      background-image: url("/jpg/textura-wall.jpg"); /* Ruta a tu imagen de fondo */
+      background-image: url("/jpg/textura-wall.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -39,12 +45,18 @@ import Layout from "../layouts/Layout.astro";
     }
     .promo-image {
       width: 100%;
-      max-width: 300px; /* Ajusta el tamaño según sea necesario */
+      max-width: 300px;
       max-height: 400px;
       margin-bottom: 20px;
+      border-radius: 10%;
     }
     .promo-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       max-width: 600px;
+      font-family: var(--cl-font-family);
+      font-size: large;
     }
     .message-button {
       margin-top: 20px;

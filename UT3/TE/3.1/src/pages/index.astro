@@ -3,11 +3,11 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Index">
-  <main class="main">
-    <img src="/jpg/Portada.jpg" alt="Portada" id="background-video" />
-    <h1>Pragmat Tattoo</h1>
-    <p></p>
-  </main>
+  <video autoplay muted loop id="background-video">
+    <source src="/jpg/lv_0_20240530234606.mp4" type="video/mp4" />
+    Tu navegador Web no soporta html5.
+  </video>
+  <main class="main"></main>
   <style>
     .main {
       display: flex;
@@ -16,6 +16,25 @@ import Layout from "../layouts/Layout.astro";
       text-align: center;
       background-color: rgba(14, 14, 14, 0.95);
       color: white;
+      position: relative;
+      z-index: 1;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 65rem;
+      object-fit: cover;
+      z-index: -1;
+    }
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
     }
   </style>
 </Layout>
