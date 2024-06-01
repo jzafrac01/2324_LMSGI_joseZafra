@@ -5,10 +5,6 @@ const items = [
     path: "/",
   },
   {
-    title: "GALERÍA",
-    path: "/gallery",
-  },
-  {
     title: "PROMOCIONES",
     path: "/promo",
   },
@@ -22,6 +18,31 @@ const items = [
 <header id="main-header">
   <nav class="navbar">
     <img id="navbar-logo" src="/svg/Pragmat_Archivo.svg" alt="logo" />
+    <div class="social-net">
+      <a
+        href="https://www.instagram.com/pragmat_tattoo?igsh=MW13cmprb3J2Mjg3Mg=="
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-instagram"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+          ></path>
+          <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+          <path d="M16.5 7.5l0 .01"></path>
+        </svg>
+      </a>
+    </div>
     <ul class="menu">
       {
         items.map((item, index) => (
@@ -72,7 +93,14 @@ const items = [
     height: 40px;
     width: 40px;
   }
-
+  .social-net {
+    position: relative;
+    left: 90px;
+    @media screen and (max-width: 768px) {
+      position: relative;
+      left: 120px;
+    }
+  }
   .header {
     max-width: 960px;
     margin: 2rem auto;

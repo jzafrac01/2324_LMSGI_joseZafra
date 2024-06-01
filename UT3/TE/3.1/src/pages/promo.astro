@@ -4,13 +4,16 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="About">
   <main class="main">
-    <div class="promo">
-      <div class="promo-content">
-        <h1>Promociones !</h1>
-        <p>3x2 EN TATTOOS CHICOS</p>
-        <p>+</p>
-        <p>50 % EN TU SEGUNDO TATTOO (EN LA MISMA SESIÓN)</p>
-      </div>
+    <div class="message">
+      <h1>Algunos de nuestros servicios</h1>
+      <p>
+        Nos enorgullecemos de ofrecer una amplia gama de servicios
+        personalizados para satisfacer todas tus necesidades artísticas
+        orientadas al tattoo. Nuestros talentosos tatuadores están dedicados a
+        proporcionar una experiencia única y segura, asegurando que cada tatuaje
+        sea una obra maestra que lleves con orgullo. Aquí te presentamos algunos
+        de nuestros servicios:
+      </p>
     </div>
     <div class="cards">
       <div class="card-1">
@@ -19,69 +22,63 @@ import Layout from "../layouts/Layout.astro";
           <h4>Realismo</h4>
           <p>
             El arte de plasmar, de manera perfecta y lo más fielmente posible,
-            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
-            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+            esa realidad que vemos, sobre un lienzo o una escultura.
           </p>
           <a href="/contacto" class="button">Más info</a>
         </div>
       </div>
       <div class="card-1">
-        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <img class="promo-image" src="/jpg/Cap1.png" />
         <div class="card-text">
-          <h4>Realismo</h4>
+          <h4>Acuarela</h4>
           <p>
-            El arte de plasmar, de manera perfecta y lo más fielmente posible,
-            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
-            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+            Imitan el efecto de las pinturas acuarelas en la piel, con colores
+            vibrantes y difuminados.
           </p>
           <a href="/contacto" class="button">Más info</a>
         </div>
       </div>
       <div class="card-1">
-        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <img class="promo-image" src="/jpg/Cap2.png" />
         <div class="card-text">
-          <h4>Realismo</h4>
+          <h4>Puntillismo</h4>
           <p>
-            El arte de plasmar, de manera perfecta y lo más fielmente posible,
-            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
-            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+            Consiste en dibujar por medio de puntos para conseguir volúmenes,
+            sombras y relieves.
           </p>
           <a href="/contacto" class="button">Más info</a>
         </div>
       </div>
       <div class="card-1">
-        <img class="promo-image" src="/jpg/IMG_8267.jpg" />
+        <img class="promo-image" src="/jpg/Cap3.png" />
         <div class="card-text">
-          <h4>Realismo</h4>
+          <h4>Tradicional</h4>
           <p>
-            El arte de plasmar, de manera perfecta y lo más fielmente posible,
-            esa realidad que vemos, sobre un lienzo o una escultura. Sin dudas,
-            es un estilo que requiere de mucha paciencia, habilidad y práctica.
+            Se hace distinguir por el uso de líneas gruesas y negras que
+            delimitan los diseños de manera precisa y definida.
           </p>
           <a href="/contacto" class="button">Más info</a>
         </div>
       </div>
-      <div class="cuidados-box">
-        <h3>Cuidados de un tatuaje</h3>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
-        </ul>
-      </div>
+    </div>
+    <div class="care-box">
+      <h2><u> Cuidados para tu tattoo</u></h2>
+      <ol>
+        <li>-> Mantener limpia la piel tatuada</li>
+        <li>-> Usar crema humectante</li>
+        <li>-> Evitar la exposición al sol</li>
+        <li>-> No nadar ni meterse en piscinas</li>
+        <li>-> Elegir cuidadosamente la ropa(para que no se adhiera)</li>
+      </ol>
     </div>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
       :root {
         --cl-font-family: "EB Garamond", serif;
+      }
+      * {
+        font-family: var(--cl-font-family);
       }
       .main {
         display: flex;
@@ -95,15 +92,16 @@ import Layout from "../layouts/Layout.astro";
         padding: 30px;
         background-color: rgba(14, 14, 14, 0.95);
         h1 {
-          font-size: 50px;
+          margin-bottom: 40px;
+        }
+        h2 {
+          margin-bottom: 40px;
+        }
+        p {
+          margin-bottom: 80px;
         }
       }
-      .promo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-      }
+
       .cards {
         display: flex;
         flex-direction: row;
@@ -120,8 +118,8 @@ import Layout from "../layouts/Layout.astro";
           flex-direction: row;
           justify-content: center;
           background-color: white;
-          max-height: 300px;
-          max-width: 350px;
+          height: 260px;
+          width: 350px;
           color: black;
           font-size: medium;
           font-family: var(--cl-font-family);
@@ -134,9 +132,8 @@ import Layout from "../layouts/Layout.astro";
           }
           .button {
             padding: 10px 20px;
-            font-size: 16px;
-            margin-top: 10%;
-            margin-bottom: 10%;
+            font-size: 15px;
+            margin-top: 0 auto;
             background-color: black;
             color: white;
             text-decoration: none;
@@ -156,15 +153,28 @@ import Layout from "../layouts/Layout.astro";
         font-family: var(--cl-font-family);
         font-size: large;
       }
-      .message-button {
-        margin-top: 20px;
-      }
 
       .button:hover {
         background-color: #0056b3;
       }
       .button:active {
         animation: bounce 0.3s;
+      }
+      .care-box {
+        margin-top: 40px;
+        h2 {
+          font-size: 30px;
+        }
+        ol {
+          margin-top: 40px;
+        }
+        li {
+          font-size: larger;
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+        }
       }
     </style>
   </main>
