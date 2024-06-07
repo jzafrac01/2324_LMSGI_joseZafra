@@ -1,0 +1,193 @@
+---
+const items = [
+  {
+    title: "INICIO",
+    path: "/",
+  },
+  {
+    title: "SERVICIOS",
+    path: "/servicios",
+  },
+  {
+    title: "CONTACTO",
+    path: "/contacto",
+  },
+  {
+    title: "PRECIOS",
+    path: "/precios",
+  },
+];
+---
+
+<header id="main-header">
+  <nav class="navbar">
+    <img id="navbar-logo" src="/svg/Pragmat_Archivo.svg" alt="logo" />
+    <div class="social-net">
+      <a
+        href="https://www.instagram.com/pragmat_tattoo?igsh=MW13cmprb3J2Mjg3Mg=="
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-instagram"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+          ></path>
+          <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+          <path d="M16.5 7.5l0 .01"></path>
+        </svg>
+      </a>
+    </div>
+    <ul class="menu">
+      {
+        items.map((item, index) => (
+          <li key={index}>
+            <a class="menu-item" href={item.path}>
+              <span>{item.title}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="menu-toggle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-menu-2"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#ffffff"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
+    </div>
+  </nav>
+  <hr />
+</header>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+  :root {
+    --cl-font-family: "EB Garamond", serif;
+  }
+  #main-header {
+    /* max-width: 960px;*/
+    margin: 0 auto;
+  }
+  #main-header hr {
+    margin: 0 auto;
+  }
+  #navbar-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .social-net {
+    position: relative;
+    left: 90px;
+    @media screen and (max-width: 768px) {
+      position: relative;
+      left: 120px;
+    }
+  }
+  .header {
+    max-width: 960px;
+    margin: 2rem auto;
+  }
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+  #navbar-logo {
+    height: 4rem;
+    width: 11rem;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    background-color: black;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--cl-font-family);
+  }
+  .menu-item {
+    color: white;
+    text-decoration: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      height: 50px;
+      width: 50px;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      top: 7%;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      gap: 0.5rem;
+      &.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 0.1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        z-index: 10;
+        font-family: var(--cl-font-family);
+
+        & li {
+          padding: 0.5rem 1rem;
+          width: 100%;
+          background-color: black;
+        }
+      }
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("active");
+      menu.classList.toggle("active");
+    });
+  });
+</script>

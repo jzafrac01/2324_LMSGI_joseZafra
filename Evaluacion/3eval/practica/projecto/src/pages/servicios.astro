@@ -1,0 +1,181 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <main class="main">
+    <div class="message">
+      <h1>Algunos de nuestros servicios</h1>
+      <p>
+        Nos enorgullecemos de ofrecer una amplia gama de servicios
+        personalizados para satisfacer todas tus necesidades artísticas
+        orientadas al tattoo. Nuestros talentosos tatuadores están dedicados a
+        proporcionar una experiencia única y segura, asegurando que cada tatuaje
+        sea una obra maestra que lleves con orgullo. Aquí te presentamos algunos
+        de nuestros servicios:
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card-1">
+        <img class="promo-image" src="/assets/Cap4.png" />
+        <div class="card-text">
+          <h4>Realismo</h4>
+          <p>
+            El arte de plasmar, de manera perfecta y lo más fielmente posible,
+            esa realidad que vemos, sobre un lienzo o una escultura.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="card-1">
+        <img class="promo-image" src="/assets/Cap1.png" />
+        <div class="card-text">
+          <h4>Acuarela</h4>
+          <p>
+            Imitan el efecto de las pinturas acuarelas en la piel, con colores
+            vibrantes y difuminados.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="card-1">
+        <img class="promo-image" src="/assets/Cap2.png" />
+        <div class="card-text">
+          <h4>Puntillismo</h4>
+          <p>
+            Consiste en dibujar por medio de puntos para conseguir volúmenes,
+            sombras y relieves.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+      <div class="card-1">
+        <img class="promo-image" src="/assets/Cap3.png" />
+        <div class="card-text">
+          <h4>Tradicional</h4>
+          <p>
+            Se hace distinguir por el uso de líneas gruesas y negras que
+            delimitan los diseños de manera precisa y definida.
+          </p>
+          <a href="/contacto" class="button">Más info</a>
+        </div>
+      </div>
+    </div>
+    <div class="care-box">
+      <h2><u> Cuidados para tu tattoo</u></h2>
+      <ol>
+        <li>-> Mantener limpia la piel tatuada</li>
+        <li>-> Usar crema humectante</li>
+        <li>-> Evitar la exposición al sol</li>
+        <li>-> No nadar ni meterse en piscinas</li>
+        <li>-> Elegir cuidadosamente la ropa(para que no se adhiera)</li>
+      </ol>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+      :root {
+        --cl-font-family: "EB Garamond", serif;
+      }
+      * {
+        font-family: var(--cl-font-family);
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 30px;
+        background-color: rgba(14, 14, 14, 0.95);
+        h1 {
+          margin-bottom: 40px;
+        }
+        h2 {
+          margin-bottom: 40px;
+        }
+        p {
+          margin-bottom: 80px;
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+        }
+        .card-1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          background-color: white;
+          height: 260px;
+          width: 350px;
+          color: black;
+          font-size: medium;
+          font-family: var(--cl-font-family);
+          h4 {
+            font-size: 20px;
+            margin: 0 auto;
+          }
+          & img {
+            max-width: 150px;
+          }
+          .button {
+            padding: 10px 20px;
+            font-size: 15px;
+            margin-top: 0 auto;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+          }
+          .button:hover {
+            background-color: grey;
+          }
+        }
+      }
+      .promo-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        font-family: var(--cl-font-family);
+        font-size: large;
+      }
+
+      .button:hover {
+        background-color: #0056b3;
+      }
+      .button:active {
+        animation: bounce 0.3s;
+      }
+      .care-box {
+        margin-top: 40px;
+        h2 {
+          font-size: 30px;
+        }
+        ol {
+          margin-top: 40px;
+        }
+        li {
+          font-size: larger;
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+        }
+      }
+    </style>
+  </main>
+</Layout>

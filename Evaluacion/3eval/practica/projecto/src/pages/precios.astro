@@ -1,0 +1,154 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About the project">
+  <main class="main">
+    <div class="encab">
+      <h1>Precios</h1>
+      <p>Simple y Predecibles precios. Sin sorpresas</p>
+    </div>
+    <div class="cards">
+      <div class="card1">
+        <div class="part1">
+          <h4>Plan individual</h4>
+          <p>29€ / año</p>
+          <a href="button" class="button">Subscríbete</a>
+        </div>
+        <div class="part2">
+          <p>✅ Acceso a todoss los cursos.</p>
+          <p>✅ Contenido de calidad impartido por profesionales.</p>
+          <p>✅ Nuevo contenido cada semana.</p>
+          <p>✅ Acceso a la comunidad CodelyTV</p>
+          <p>✅ Certificados al completar los cursos</p>
+        </div>
+      </div>
+
+      <div class="card2">
+        <div class="part1">
+          <h4>Plan individual</h4>
+          <p>!Ahorra 50€!</p>
+          <p>229€ / año</p>
+          <a href="button" class="button">Subscríbete</a>
+        </div>
+        <div class="part2">
+          <p>✅ Acceso a todoss los cursos.</p>
+          <p>✅ Centraliza todo en un único pago.</p>
+          <p>✅ El mejor ahorro para el plan individual.</p>
+          <p>✅ Contenido de calidad impartido por profesionales.</p>
+          <p>✅ Nuevo contenido cada semana.</p>
+          <p>✅ Acceso a la comunidad CodelyTV</p>
+          <p>✅ Certificados al completar los cursos</p>
+        </div>
+      </div>
+
+      <div class="card3">
+        <div class="part1">
+          <h4>Plan empresas</h4>
+          <p>desde 168€</p>
+          <a href="button" class="button">Subscríbete</a>
+        </div>
+        <div class="part2">
+          <p>✅ Gestión centralizada de cuentas.</p>
+          <p>✅ Todos los beneficios del plan individual.</p>
+          <p>✅ Reducción de precios por incremento de cuentas.</p>
+          <p>✅ Contenido de calidad impartido por profesionales.</p>
+          <p>✅ Informe trimestral de progreso.</p>
+          <p>✅ Y muchos mas beneficios.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <style>
+    :root {
+      --cl-Familia: "Source Sans 3", sans-serif;
+      --cl-BlackCus: #023047;
+    }
+    * {
+      font-family: var(--cl-Familia);
+    }
+    .main {
+      background-color: #457b9d;
+      .encab {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1 {
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 40px;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .card1 {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          background-color: var(--cl-BlackCus);
+          width: 400px;
+          .part1 {
+            background-color: white;
+          }
+        }
+
+        .card2 {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          background-color: var(--cl-BlackCus);
+          border-color: black;
+          width: 400px;
+
+          .part1 {
+            background-color: white;
+          }
+        }
+        .card3 {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          background-color: #023047;
+          border-color: black;
+          width: 400px;
+
+          .part1 {
+            background-color: white;
+          }
+        }
+
+        .part2 {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          padding: 25px 10px;
+          p {
+            margin: 3px 0px;
+          }
+        }
+
+        .button {
+          display: inline-block;
+          background-color: hsl(130, 100%, 62%);
+          color: black;
+          margin: 15px;
+          padding: 10px 130px;
+          text-decoration: none;
+          border-radius: 20px;
+        }
+        .button:hover {
+          background-color: grey;
+        }
+      }
+    }
+  </style>
+</Layout>

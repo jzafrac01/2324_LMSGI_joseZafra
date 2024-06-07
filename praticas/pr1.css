@@ -1,0 +1,11 @@
+*{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.cont{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+border-color: black;
+}

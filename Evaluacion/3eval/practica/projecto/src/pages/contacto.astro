@@ -1,0 +1,288 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+//Script formulario para serv
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
+
+  // Añadir aquí los datos del serv
+  console.log("Nombre:", name);
+  console.log("Correo electrónico:", email);
+  console.log("Mensaje:", message);
+
+  alert("Formulario enviado con éxito.");
+};
+---
+
+<script>
+  const blinkButton = () => {
+    const button = document.querySelector('button[type="submit"]');
+    if (button) {
+      button.style.transition = "opacity 3s";
+      let opacity = 1;
+      setInterval(() => {
+        opacity = opacity === 1 ? 0.5 : 1;
+        button.style.opacity = opacity;
+      }, 1000);
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", blinkButton);
+</script>
+
+<Layout title="About the project">
+  <main class="main">
+    <div class="contact">
+      <div class="contact-main">
+        <video autoplay muted loop id="background-video">
+          <source src="/assets/VIDEO-Port.mp4" type="video/mp4" />
+          Tu navegador Web no soporta html5.
+        </video>
+        <h1>Contáctenos</h1>
+        <p class="message-contact">
+          Para consultas, citas o más información sobre nuestros servicios, no
+          dudes en contactarnos a través de cualquiera de los medios
+          mencionados. Estamos aquí para ayudarte a transformar tus ideas en
+          arte.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="schedule-section">
+          <div id="schedule-div">
+            <h2>Horario de Atención</h2>
+            <p>El horario podrá adaptarse a las necesidades del cliente.</p>
+            <div class="schedule">
+              <p>
+                <strong>LUNES - VIERNES:</strong>
+                <span>9:00-14:00,16:00-20:00</span>
+              </p>
+              <p>
+                ...........................................................................
+              </p>
+              <p>
+                <strong>SÁBADO:</strong>
+                <span>9:00-15:00</span>
+              </p>
+              <p>
+                ...........................................................................
+              </p>
+              <p><strong>DOMINGO:</strong> <span>Cerrado</span></p>
+            </div>
+            <div class="contact-info">
+              <ul>
+                <li>Correo electrónico: <i>info@pragmatattoo.com</i></li>
+                <li>Teléfono: +34 645 59 22 37</li>
+                <li>
+                  Dirección: Calle Julián García Hernández nº1, Almendralejo,
+                  España
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <p><strong>Formulario de contacto</strong></p>
+          <form class="contact-form" onSubmit={handleSubmit}>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="surnames">Apellidos:</label>
+            <input type="text" id="surnames" name="surnames" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.472036202835!2d-6.404715999999999!3d38.68400009999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd141d7ef0a5ebc7%3A0x918fc1182fb94bc!2sC.%20Juli%C3%A1n%20Garc%C3%ADa%20Hern%C3%A1ndez%2C%2006200%20Almendralejo%2C%20Badajoz!5e0!3m2!1ses!2ses!4v1716729417056!5m2!1ses!2ses"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+      :root {
+        --cl-font-family: "EB Garamond", serif;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 960px;
+        background-color: rgba(14, 14, 14, 0.95);
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+        }
+      }
+
+      .contact-main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+
+        h1,
+        .message-contact {
+          position: relative;
+          z-index: 1;
+          color: rgba(255, 255, 255, 0.7);
+          font-family: var(--cl-font-family);
+        }
+
+        #background-video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 0;
+        }
+
+        .message-contact {
+          margin-bottom: 150px;
+        }
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      .contact-form,
+      .schedule-section {
+        flex: 1;
+        margin: 10px;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        color: white;
+
+        label {
+          margin-bottom: 8px;
+          font-weight: bold;
+        }
+
+        input,
+        textarea {
+          margin-bottom: 16px;
+          padding: 0.5rem;
+          font-size: 16px;
+          background-color: rgba(14, 14, 14, 0.95);
+          color: white;
+          border: 1px solid white;
+        }
+
+        button {
+          padding: 0.625rem;
+          font-size: 16px;
+          background-color: #007bff;
+          color: black;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #0056b3;
+            border-radius: 8%;
+          }
+        }
+      }
+
+      .schedule-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 1.25rem;
+        max-width: 400px;
+        margin: 0 auto;
+        color: white;
+
+        .schedule {
+          color: white;
+          text-align: left;
+
+          p {
+            margin: 5px 0;
+            font-size: 16px;
+          }
+
+          span {
+            color: grey;
+          }
+
+          strong {
+            color: white;
+          }
+        }
+
+        .contact-info {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          color: white;
+          align-self: flex-start;
+
+          ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+
+      .contact-map {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+
+        iframe {
+          width: 100%;
+          max-width: 780px;
+          height: 450px;
+          border: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          iframe {
+            height: 300px;
+          }
+        }
+      }
+    </style>
+  </main>
+</Layout>
